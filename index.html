@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>eShop - ecommerce Mobile App Dashboard Setup | Documentation</title>
+    <!-- Styles -->
+    <link href="assets/css/theDocs.all.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link rel='icon' href='assets/img/favicon-64.png' type='image/gif' sizes="16x16">
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:100,300,400,500%7CLato:300,400' rel='stylesheet'
+        type='text/css'>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="../apple-touch-icon.html">
+</head>
+
+<body data-spy="scroll" data-target=".sidebar" data-offset="200">
+    <header class="site-header navbar-transparent">
+        <!-- Top navbar & branding -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Toggle buttons and brand -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="true" aria-controls="navbar">
+                        <span class="glyphicon glyphicon-option-vertical"></span>
+                    </button>
+                    <button type="button" class="navbar-toggle for-sidebar" data-toggle="offcanvas">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/eshop-logo.png" alt="logo"
+                            align="center" style="max-height: 120px;"></a>
+                </div>
+                <!-- END Toggle buttons and brand -->
+                <!-- Top navbar -->
+                <!-- END Top navbar -->
+            </div>
+        </nav>
+        <!-- END Top navbar & branding -->
+        <!-- Banner -->
+        <div class="banner auto-size" style="background-color: #c74e4636">
+            <div class="container text-black">
+                <h1><strong>eShop Admin Panel
+                    </strong> Documentation
+                </h1>
+                <h5>Easy To Configure,Setup And Use Our System</h5>
+            </div>
+        </div>
+        <!-- END Banner -->
+    </header>
+    <main class="container">
+        <div class="row">
+            <!-- Sidebar -->
+            <aside class="col-sm-3 sidebar sidebar-line">
+                <ul class="nav sidenav dropable sticky">
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#title">Setup</a></li>
+                    <ul>
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#db2"> Client Api Keys Configration </a></li>
+                        <li><a href="#firebase_config"> Web Version Firebase Configration </a></li>
+                        <li><a href="#social_login"> Social Login Configration </a></li>
+                        <li><a href="#update">Auto Update</a></li>
+                    </ul>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#tabs">Tabs</a></li>
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li>
+                            <a href="#orders">Orders</a>
+                            <ul>
+                                <li><a href="#order_tracking">Order Tracking</a></li>
+                                <li><a href="#shipping_order_flow">Shipping Order Flow </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#sellers">Sellers</a>
+                            <ul>
+                                <li><a href="#seller_wallet_transactions">Wallet Transactions</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#categories">Categories</a></li>
+                        <a href="#products">Products</a>
+                        <ul>
+                            <li><a href="#add_products">Add Products</a></li>
+                            <li><a href="#attributes">Attributes</a></li>
+                            <li><a href="#attribut_sets">Attribute Sets</a></li>
+                            <li><a href="#attribute_values">Attribute Values</a></li>
+                            <li><a href="#tax">Tax</a></li>
+                            <li><a href="#manage_products">Manage Products</a></li>
+                            <li><a href="#products_order">Products Order</a></li>
+                        </ul>
+                        <li><a href="#media_gallery">Media Management</a></li>
+                        <li><a href="#home_slider">Home Slider Images</a></li>
+                        <li><a href="#new_offers">New Offers Images</a></li>
+                        <li><a href="#promo_code">Promo code</a></li>
+                        <li><a href="#manage_stock">Manage Stock</a></li>
+                        <a href="#featured_sections">Featured Sections</a>
+                        <ul>
+                            <li><a href="#manage_sections">Manage Sections</a></li>
+                            <li><a href="#sections_order">Sections Order</a></li>
+                        </ul>
+                        <a href="#customer">Customer</a>
+                        <ul>
+                            <li><a href="#view_customers">View Customers</a></li>
+                            <li><a href="#transaction">Transaction </a></li>
+                            <li><a href="#wallet_transaction">Wallet Transaction</a></li>
+                        </ul>
+                        <li><a href="#return_requests">Return Requests</a></li>
+                        <a href="#delivery_boys">Delivery Boys</a>
+                        <ul>
+                            <li><a href="#manage_delivery_boys">Manage Delivery Boys</a></li>
+                            <li><a href="#fund_transerfer">Fund Transerfer</a></li>
+                        </ul>
+                        <li><a href="#send_notification">Send Notification</a></li>
+                        <li>
+                            <a href="#system">System</a>
+                            <ul>
+                                <li><a href="#store_settings">Store Settings</a></li>
+                                <li><a href="#email_settings">Email Settings</a></li>
+                                <li><a href="#payment_methods">Payment Methods</a></li>
+                                <li><a href="#time_slots">Time Slots</a></li>
+                                <li><a href="#authentication_mode">Authentication Mode</a></li>
+                                <li><a href="#notification_settings">Notification Settings</a></li>
+                                <li><a href="#contact_us">Contact Us</a></li>
+                                <li><a href="#privacy_policy">Privacy Policy</a></li>
+                                <li><a href="#admin_privacy">Admin Privacy Policy</a></li>
+                                <li><a href="#delivery_boy_privacy">Delivery Boy Privacy Policy</a></li>
+                                <li><a href="#about_us">About Us</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#location">Location</a>
+                            <ul>
+                                <li><a href="#zipcodes">Zipcodes</a></li>
+                                <li><a href="#city">City</a></li>
+                                <li><a href="#area">Areas</a></li>
+                                <li><a href="#bulk_upload">Bulk Upload</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#report">Reports</a>
+                            <ul>
+                                <li><a href="#sal_rep">Sales Report</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+
+                </ul>
+            </aside>
+            <!-- END Sidebar -->
+            <!-- Main content -->
+            <article class="col-sm-9 main-content" role="main">
+                <section>
+                    <h3 id="installation"> Step 1. How install the eshop backend and / or web version code on your
+                        server by using installation wizard?</h3>
+                    <ol>
+                        <li>First of all find the <b>eShop</b> folder from the PHP code folder from the downloaded
+                            package and upload the code to your server on your desired domain or subdomain. <b>Like for
+                                example, You have https://eshop.com domain with you</b></li>
+                        <li>Create a new database from cPanel</li>
+                        <li>Create new user for the database & give all the privileges to the user</li>
+                        <li>Afrer creation of user visit <code>https://eshop.com/install</code></li>
+                        <div class="promo">
+                            <img class="bordered" src="assets/img/installer_page.png" alt="sample1">
+                            <p>Sample image</p>
+                        </div>
+                        <ol>
+                            <li><span style="color:blue;">Database Hostname</span> : Enter the hostname.</li>
+                            <li><span style="color:blue;">Database Username</span> : Enter the username that have access
+                                to the database.</li>
+                            <li><span style="color:blue;">Database Password</span> : Enter the password.</li>
+                            <li><span style="color:blue;">Database Name</span> : Enter the name of database.</li>
+                            <li><span style="color:blue;">Admin Mobile</span> : Enter the mobile number <b>(The mobile
+                                    number will be used further for user authentication)</b></li>
+                            <li><span style="color:blue;">Admin Password</span> : Enter the password number<b>(The
+                                    password will be used further for user authentication)</b></li>
+                        </ol>
+                    </ol>
+                    <p> Now click <span style="color:blue;">Install</span>. Thats it! You are ready to run your first
+                        ecommerce App : <b>https://eshop.com/</b></p>
+                </section>
+
+                <section>
+
+                    <h3 id="db2">Generate Client API Secret Key to be used in api requests from mobile apps.</h3>
+                    <ul>
+                        <li style="color:red;" type="">
+                            Client API Secret Key will be used in Application side. Once generated you have to set this
+                            key in the application as a JWT secret code.
+                        </li>
+                    </ul>
+                    <ol>
+                        <li style="color:red;" type="">Goto http://eshop.in/admin/client-api-keys/</li>
+                        <li style="color:red;" type="">You can generate secret as per image below.</li>
+                        <li style="color:red;" type="">Set the secret on the app side as JWT Secret Key. </li>
+                        <div class="promo">
+                            <img class="bordered" src="assets/img/client_api_structure.JPG" alt="sample Image">
+                            <p>Sample image</p>
+                        </div>
+                    </ol>
+                </section>
+                <section>
+                    <h3 id="firebase_config">Configure the firebase setup for login web version</h3>
+                    <div class="alert alert-warning"><b>Note</b> : This step is very much important for web version
+                        login, register and forget password feature to work. So please follow the below steps carefully.
+                    </div>
+                    <ul>
+                        <h3>
+                            <li style="color:red;" type="1"> Create Firebase Project</li>
+                        </h3>
+                    </ul>
+                    <ol type="A">
+                        <li style="color:red;" type="">Goto <a href="https://console.firebase.google.com/"
+                                target="_blank"> >> Firebase console << </a>. </li>
+                        <li style="color:red;" type="">
+                            Register a new account or try to log in with existing google accout.</li>
+                        <div class="promo">
+                            <img class="bordered" src="assets/img/consolepage.png" alt="sample Image">
+                            <p>Sample image</p>
+                        </div>
+                        <li style="color:red;" type="">Once logged in, you can see firebase console dashboard. Click on
+                            Add Project. Provide a project name, and then select country and then after that click on
+                            Create Project. For example, see the below image.</li>
+                        <div class="promo">
+                            <img class="bordered" src="assets/img/AddProject.png" alt="sample Image">
+                            <p>Sample image</p>
+                        </div>
+                        <div class="promo">
+                            <img class="bordered" src="assets/img/CreateProject.png" alt="sample Image">
+                            <p>Sample image</p>
+                        </div>
+                        <li style="color:red;" type="">Once the project has been created, it will automatically redirect
+                            to Firebase dashboard screen.</li>
+                        <div class="promo">
+                            <img class="bordered" src="assets/img/Dashboard.png" alt="sample Image">
+                            <p>Sample image</p>
+                        </div>
+                        <li style="color:red;" type="">As eShop Front End(Web version) is a web project, you need to add
+                            web project/application to the firebase project.</li>
+                        <div class="promo">
+                            <img class="bordered" src="assets/img/Dashboard_1.png" alt="sample Image">
+                            <p>Sample image</p>
+                        </div>
+                        <li style="color:red;" type="">Goto Authentication and open " Sign-in method " Tab</li>
+                        <div class="promo">
+                            <img class="bordered" src="assets/img/authentication.png" alt="sample Image">
+                            <p>Sample image</p>
+                        </div>
+                        <li style="color:red;" type="">Now at the bottom of the page,</br> -> In "Authorized domains",
+                            localhost
+                            and a Firebase domain are automatically added.</br> -> Here we've to add domain name without
+                            http://
+                            and https:// whever eShop Front End(Web Version) Website will get hosted. If you're using
+                            www as prefix of domain name then you must have to add that.</li>
+                        <li style="color:red;" type="">Now add your domain with <b> www. </b> as prefix like
+                            www.myeShop.com</li>
+                        <li style="color:red;" type="">Also add your domain without <b> www. </b> like myeShop.com</li>
+                        <div class="promo">
+                            <img class="bordered" src="assets/img/add_domain.png" alt="sample Image">
+                            <p>Sample image</p>
+                        </div>
+                        <li style="color:red;" type="">Goto Project settings in firebase dashboard option. </li>
+                        <div class="promo">
+                            <img class="bordered" src="assets/img/web_setting_details.png" alt="sample Image">
+                            <p>Sample image</p>
+                        </div>
+                        <li style="color:red;" type="">Goto Project settings and scroll down you will find created web
+                            App there you find config option that will have firebase settings for front end. </li>
+                        <li style="color:red;" type="">here you have to set all details except the two fields <b>1.
+                                databaseURL & 2. measurementId. </b> Here you can set only <b>test</b> word. </li>
+                        <div class="promo">
+                            <img class="bordered" src="assets/img/web_setting_config.png" alt="sample Image">
+                            <p>Sample image</p>
+                        </div>
+                        <li style="color:red;" type="">You need to set this details in eShop admin panel -> Web Settings
+                            page from this Project settings page in firebase dashboard option </li>
+                        <div class="promo">
+                            <img class="bordered" src="assets/img/web_settings.png" alt="sample Image">
+                            <p>Sample image</p>
+                        </div>
+                    </ol>
+                </section>
+                <section>
+                    <h3 id="social_login">Configure the firebase setup for social login web version</h3>
+                    <ul>
+                        <h3>
+                            <li style="color:red;" type="1"> Goto Admin panel System >> store settings and ON Social
+                                login method you want.</li>
+                        </h3>
+                        <div class="promo">
+                            <img class="bordered" src="assets/img/admin_panel_social_login.png" alt="sample Image">
+                            <p>Sample image</p>
+                        </div>
+                        <h3>
+                            <li style="color:red;" type="1"> Goto Authentication and open " Sign-in method " Tab</li>
+                        </h3>
+                        <div class="promo">
+                            <img class="bordered" src="assets/img/firebase_sign_in_method.png" alt="sample Image">
+                            <p>Sample image</p>
+                        </div>
+                        <ol type="A">
+                            <li style="color:red;" type="">Enable Google sign-in-method</li>
+                        </ol>
+                        <h3>
+                            <!-- <li style="color:red;" type="1"> Facebook Authentication </li> -->
+                        </h3>
+                        <!-- <ol type="A">
+                            <li style="color:red;" type="">For facebook authentication with firebase , go to >>
+                                <a href="https://developers.facebook.com/" target="_blank">Facebook for Developers </a>
+                            </li>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_developer_login.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <li style="color:red;" type="">Now go to the My Apps option and create new app for your project</li>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_myapp.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_create_app.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_create_app2.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_create_app3.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_create_app4.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <li style="color:red;" type="">Now go to Quickstart option and select www(web) option
+                            </li>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_create_app5.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_create_app6.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <li style="color:red;" type="">Now go to Settings >> Basic and get your APP ID and APP SECRET , add this details in your firebase account facebook sign-in-method
+                            </li>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_create_app7.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_create_app9.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <li style="color:red;" type="">Now go to Facebook Login >> settings and configure your details there
+                            </li>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_create_app10.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                        </ol> -->
+                    </ul>
+                </section>
+                <section>
+                    <!-- start auto update -->
+                    <h1 id="update">Auto Update</h1>
+                    <h3>How to auto update your admin panel or web version to latest version?</h3>
+                    <div class="alert alert-warning"><b>Note</b> : If you are upgrading your from very old version then
+                        please update the system in sequence one after the another. Don't skip any version in between.
+                    </div>
+                    <ol>
+                        <li>Find <b>update from vX.X to vX.X.X.zip</b> file from downloded PHP source code.</li>
+                        <li>Visit <code>http://eshop.com/admin/updater</code>
+                        </li>
+                        <li>You will see simple instructions, current version to latest version information and
+                            <b>"Update The System"</b> button.
+                        </li>
+                        <li>Upload <b>update.zip</b> file.</li>
+                        <li>Click on that Update Button. </li>
+                        <li>That's all. You have successfully updated your system from older version to newer one.</li>
+                    </ol>
+                    <!-- end auto update -->
+                </section>
+                <section>
+                    <h2 id="support">Support</h2>
+                    If you are facing any technical issues or challanges while using our system. You can contact us on
+                    skype.
+                    <br />We are available for technical support from 9.00AM to 6.00PM Indian Standard Time Monday to
+                    Friday.
+                    <br />
+                    <h3>For Web or backend related issues contact here, </h3>
+                    <a href='https://join.skype.com/invite/xrrk0B82xIu2'>Drop a Message on Skype</a> or Search this ID
+                    on Skype :
+                    Roshni Varsani
+                    <h3>And for mobile application related issues contact here, </h3>
+                    <a href='https://join.skype.com/invite/yDse6qlxED06'>Drop a Message on Skype</a> or Search this ID
+                    on Skype :
+                    Rilpa Vadhadiya
+                </section>
+                <section>
+                    <h2 id="tabs">Website Overview</h2>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/overview.png" alt="sample3">
+                        <p>Sample image</p>
+                    </div>
+                    <p style="color:red;">The Above web page contains tabs on the left panel like
+                        Home,Orders,Categories,Product, Home Slider Images,New Offers Images,Promo code,Featured
+                        Sections,Customer,Return Requests,Delivery Boys,Send Notification,System,Location,Reports
+                        and FAQs to manage the whole website</p>
+
+                    <h3 id="Home">Home Panel</h3>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/home_page.png" alt="sample3">
+                        <p>Sample image</p>
+                    </div>
+                    <p>It Mainly contains 4 Items</p>
+                    <ul>
+                        <li>Orders:<span style="color:red;">To view Orders Information</span></li>
+                        <li>New Signups:<span style="color:red;">To view New Signups Information</span></li>
+                        <li>Delivery Boys:<span style="color:red;">To view Delivery Boys Information</span></li>
+                        <li>Products:<span style="color:red;">To view Product Information</span></li>
+                    </ul>
+                    <p>And Two charts</p>
+                    <ul>
+                        <li>Products Sales:<span style="color:red;">To summarize sale in last days,weeks and
+                                months</span></li>
+                        <li>Category Wise Product:<span style="color:red;">To summarize category wise product
+                                count</span></li>
+
+                    </ul>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/theme.jpg" alt="sample3">
+                        <p>Sample image</p>
+                    </div>
+                    <p style="color:red;">The Above web page contains Customize The Theme on the right panel like No
+                        Navbar border,Body small text,Navbar small text,Sidebar nav small text,Footer small text,Sidebar
+                        nav flat style,Sidebar nav child indent,Navbar Variants,Dark
+                        Sidebar Variants,Dark Sidebar Variants to manage the whole website</p>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/header-users.png" alt="sample3">
+                        <p>Sample image</p>
+                    </div>
+                    <p>It Mainly contains 2 Items</p>
+                    <ul>
+                        <li>Profile:<span style="color:red;">To Update the Admin Information</span></li>
+                        <li>Log Out:<span style="color:red;">Log out the admin pannel</span></li>
+                    </ul>
+
+                    <h2 id="orders">Order Panel</h2>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/orders_table.png" alt="sample3">
+                    </div>
+                    <p style="color:red;">Here all the information related to order is displayed</p>
+                    Actions
+                    <ul>
+                        <li>Filters By Status</li>
+                        <ul>
+                            <li style="color:grey;">
+                                <img class="bordered" src="assets/img/filter_status.jpg" alt="sample3"> Used to filter
+                                the Order Status according to the criteria
+                            </li>
+                        </ul>
+                        <li>Search Order details</li>
+                        <ul>
+                            <li style="color:grey;">
+                                <img class="bordered" src="assets/img/search_tab.jpg" alt="sample3"> To search the Order
+                                Detail
+                            </li>
+                        </ul>
+                        <li>Refresh Orders list</li>
+                        <ul>
+                            <li style="color:grey;">
+                                <img class="bordered" src="assets/img/refresh_tab.jpg" alt="sample3"> To Refresh Order
+                                List
+                            </li>
+                        </ul>
+                        <li>Filters</li>
+                        <ul>
+                            <li style="color:grey;">
+                                <img class="bordered" src="assets/img/filter_tab.jpg" alt="sample3"> Used to filter the
+                                Order details according to the criteria
+                            </li>
